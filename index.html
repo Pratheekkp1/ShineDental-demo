@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Light blue animated background panels -->
+    <div class="background-panels" aria-hidden="true">
+        <div class="bg-panel panel1"></div>
+        <div class="bg-panel panel2"></div>
+        <div class="bg-panel panel3"></div>
+    </div>
     <header>
         <div class="top-contact-bar">
             <span>Call: <a href="tel:540-773-3206">540-773-3206</a></span>
@@ -24,7 +30,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#drlee">Meet Dr. Lee</a></li>
                 <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact" id="contactBtn">Contact</a></li>
+                <li><a href="#schedule" id="contactBtn">Contact</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Open menu">
                 <span></span><span></span><span></span>
@@ -162,10 +168,10 @@
             </div>
         </section>
 
-        <section class="contact-section section" id="contact">
+        <section class="contact-section section" id="schedule">
             <div class="container contact-grid">
                 <div>
-                    <h2>Contact Us</h2>
+                    <h2>Schedule Your Visit</h2>
                     <div class="contact-info">
                         <p><strong>381 Gateway Dr. Suite 9<br>Winchester, VA 22603</strong></p>
                         <p>Email: <a href="mailto:ShineDentalWinchester@gmail.com">ShineDentalWinchester@gmail.com</a></p>
@@ -196,22 +202,10 @@
         </div>
     </footer>
 
-    <div id="contactPopup" class="modal">
-        <div class="modal-content">
-            <span class="close" id="closePopup">&times;</span>
-            <h2>Contact Us</h2>
-            <form id="popupContactForm">
-                <label for="popupName">Name:</label>
-                <input type="text" id="popupName" required>
-                <label for="popupEmail">Email:</label>
-                <input type="email" id="popupEmail" required>
-                <label for="popupMessage">Message:</label>
-                <textarea id="popupMessage" required></textarea>
-                <button type="submit" class="primary-btn">Send</button>
-            </form>
-            <p id="popupFormMsg"></p>
-        </div>
-    </div>
+    <button class="floating-schedule-btn" id="floatingScheduleBtn" aria-label="Schedule Now">
+        Schedule Now
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>

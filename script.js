@@ -10,45 +10,26 @@ if (hamburger && navLinks) {
     });
 }
 
-// Contact popup logic
+// Scroll to schedule/contact section on nav or floating button click
+const scheduleSection = document.getElementById('schedule');
 const contactBtn = document.getElementById('contactBtn');
 const bookBtn = document.getElementById('bookBtn');
-const contactPopup = document.getElementById('contactPopup');
-const closePopup = document.getElementById('closePopup');
-const popupContactForm = document.getElementById('popupContactForm');
-const popupFormMsg = document.getElementById('popupFormMsg');
+const floatingScheduleBtn = document.getElementById('floatingScheduleBtn');
+
+function smoothScrollToSchedule(e) {
+    if (e) e.preventDefault();
+    if (scheduleSection) {
+        scheduleSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+if (contactBtn) contactBtn.addEventListener('click', smoothScrollToSchedule);
+if (bookBtn) bookBtn.addEventListener('click', smoothScrollToSchedule);
+if (floatingScheduleBtn) floatingScheduleBtn.addEventListener('click', smoothScrollToSchedule);
+
+// Contact form logic (unchanged)
 const contactForm = document.getElementById('contactForm');
 const formMsg = document.getElementById('formMsg');
-
-function openPopup(e) {
-    if (e) e.preventDefault();
-    contactPopup.style.display = 'block';
-    setTimeout(() => {
-        contactPopup.querySelector('input, textarea').focus();
-    }, 200);
-}
-function closeModal() {
-    contactPopup.style.display = 'none';
-    if (popupContactForm) popupContactForm.reset();
-    if (popupFormMsg) popupFormMsg.textContent = '';
-}
-if (contactBtn) contactBtn.addEventListener('click', openPopup);
-if (bookBtn) bookBtn.addEventListener('click', openPopup);
-if (closePopup) closePopup.addEventListener('click', closeModal);
-
-window.onclick = function(event) {
-    if (event.target == contactPopup) { closeModal(); }
-}
-
-if (popupContactForm) {
-    popupContactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        popupFormMsg.textContent = 'Thank you for contacting us! We will get back to you soon.';
-        popupFormMsg.style.color = 'green';
-        setTimeout(closeModal, 2000);
-    });
-}
-
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
