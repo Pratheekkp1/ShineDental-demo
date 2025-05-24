@@ -5,7 +5,6 @@ if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('show');
     });
-    // Close menu on link click (mobile)
     navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => navLinks.classList.remove('show'));
     });
@@ -21,7 +20,6 @@ const popupFormMsg = document.getElementById('popupFormMsg');
 const contactForm = document.getElementById('contactForm');
 const formMsg = document.getElementById('formMsg');
 
-// Popup logic
 function openPopup(e) {
     if (e) e.preventDefault();
     contactPopup.style.display = 'block';
@@ -34,7 +32,6 @@ function closeModal() {
     if (popupContactForm) popupContactForm.reset();
     if (popupFormMsg) popupFormMsg.textContent = '';
 }
-
 if (contactBtn) contactBtn.addEventListener('click', openPopup);
 if (bookBtn) bookBtn.addEventListener('click', openPopup);
 if (closePopup) closePopup.addEventListener('click', closeModal);

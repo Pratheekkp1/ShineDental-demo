@@ -6,172 +6,164 @@
     <title>Shine Dental | Kids & Family Dentistry</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar">
-        <div class="navbar-content container">
+    <header>
+        <div class="top-contact-bar">
+            <span>Call: <a href="tel:540-773-3206">540-773-3206</a></span>
+            <span>We accept most PPO insurances! <small>(Not HMO or Medicaid)</small></span>
+        </div>
+        <nav class="navbar container">
             <a href="#home" class="logo-link">
-                <img src="images/logo.png" alt="Shine Dental Kids & Family Dentistry logo" class="logo-img">
+                <img src="images/logo.png" alt="Shine Dental Logo" class="logo-img">
             </a>
-            <nav>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#drlee">Meet Dr. Lee</a></li>
-                    <li><a href="#patients">Happy Patients</a></li>
-                    <li><a href="#contact" id="contactBtn">Contact</a></li>
-                </ul>
-                <button class="hamburger" id="hamburger" aria-label="Open menu">
-                    <span></span><span></span><span></span>
-                </button>
-            </nav>
-        </div>
-        <div class="top-banner">
-            <div>
-                <strong>Call Now: <a href="tel:540-773-3206">540-773-3206</a></strong>
-            </div>
-            <div>
-                <span>We accept most PPO insurances! <small>(Not HMO or Medicaid)</small></span>
-            </div>
-        </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#drlee">Meet Dr. Lee</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact" id="contactBtn">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
     </header>
 
-    <main id="main">
-        <section id="home" class="hero section">
-            <div class="hero-bg"></div>
-            <div class="hero-content container">
-                <h1>Welcome to <span class="highlight">Shine Dental</span></h1>
-                <p>
-                    At Shine Dental, we deliver painless, effective dental care that keeps your smile bright and beautiful. Dr. Si-Hyeon Lee tailors every treatment to your needs, ensuring a comfortable and positive dental experience for every patient.
-                </p>
-                <button id="bookBtn" class="animated-btn primary">Book Appointment</button>
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Welcome to <span>Shine Dental</span></h1>
+                    <p>Your family's smile is our passion. Experience gentle, modern dentistry in a warm, welcoming environment.</p>
+                    <button class="primary-btn" id="bookBtn">Book Appointment</button>
+                </div>
+                <div class="hero-img-wrap">
+                    <img src="images/office1-lobby.jpeg" alt="Shine Dental Lobby" class="hero-img">
+                </div>
             </div>
         </section>
 
-        <section id="about" class="section fade-in">
+        <section class="about-section section" id="about">
             <div class="container grid-2">
+                <div class="about-imgs">
+                    <img src="images/office1-lobby.jpeg" alt="Reception Area" class="about-img">
+                    <img src="images/office3-hallway.jpeg" alt="Office Hallway" class="about-img">
+                </div>
                 <div>
-                    <h2>About Us</h2>
+                    <h2>About Shine Dental</h2>
                     <p>
-                        Shine Dental is a modern, welcoming dental practice using the latest technology to provide gentle, patient-focused care. We treat each patient as family, emphasizing respect, compassion, and professionalism.
+                        Shine Dental blends state-of-the-art technology with a family-friendly approach. We offer care for all ages, always prioritizing your comfort and well-being.
                     </p>
-                    <ul class="about-list">
-                        <li>Exams, cleanings, and fillings for all ages</li>
-                        <li>Orthodontics & Invisalign</li>
-                        <li>Implants with CBCT & surgical guides</li>
-                        <li>Bridges, crowns, dentures</li>
-                        <li>Extractions & root canals</li>
+                    <ul>
+                        <li>Comprehensive exams & cleanings</li>
+                        <li>Invisalign & orthodontics</li>
+                        <li>Implants & surgical guides</li>
+                        <li>Crowns, bridges, dentures</li>
                         <li>Cosmetic dentistry & whitening</li>
-                        <li>Gum treatment</li>
+                        <li>Extractions & root canals</li>
+                        <li>Gum (periodontal) care</li>
                         <li>Emergency dental care</li>
                     </ul>
-                    <p>
-                        We also offer nitrous oxide for added comfort. Located in Winchester, VA, we proudly serve surrounding communities.
-                    </p>
-                </div>
-                <div class="about-images">
-                    <img src="images/office1-lobby.jpeg" alt="Shine Dental Reception Area" class="rounded shadow img-zoom">
-                    <img src="images/office3-hallway.jpeg" alt="Shine Dental Hallway" class="rounded shadow img-zoom">
+                    <p>We offer nitrous oxide for relaxation, and serve Winchester, Stephens City, Berryville, and nearby communities.</p>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="section slide-up">
+        <section class="services-section section" id="services">
             <div class="container">
                 <h2>Our Services</h2>
                 <div class="service-cards">
                     <div class="service-card">
-                        <span class="service-icon">⏱️</span>
+                        <img src="images/office2-equipment.jpeg" alt="Dental Equipment" class="service-img">
                         <h3>Emergency Dental</h3>
+                        <p>Prompt, gentle relief for pain, injury, or urgent needs.</p>
                     </div>
                     <div class="service-card">
-                        <span class="service-icon">🦷</span>
+                        <img src="images/office4-treatment.jpeg" alt="Treatment Room" class="service-img">
                         <h3>Cosmetic Dentistry</h3>
+                        <p>Veneers, whitening, and more for your best, brightest smile.</p>
                     </div>
                     <div class="service-card">
-                        <span class="service-icon">👨‍⚕️</span>
+                        <img src="images/office1-lobby.jpeg" alt="General Dentistry" class="service-img">
                         <h3>General Dentistry</h3>
+                        <p>Exams, cleanings, fillings, and preventive oral care for every age.</p>
                     </div>
                 </div>
-                <div class="services-details grid-2">
+                <div class="services-list">
                     <div>
                         <h4>Routine Exams & Cleanings</h4>
-                        <p>Maintain your oral health with regular exams, cleanings, and preventive screenings.</p>
+                        <p>Stay healthy with regular checkups, cleanings, and screenings.</p>
                         <h4>Implant Restoration</h4>
                         <p>Replace missing teeth with durable, natural-looking implants.</p>
                         <h4>Invisalign</h4>
-                        <p>Straighten your smile discreetly with custom clear aligners. Book a consultation!</p>
+                        <p>Straighten your teeth with clear aligners—ask for a consult!</p>
                         <h4>Crowns & Bridges</h4>
-                        <p>Restore your bite and confidence with custom crowns and bridges.</p>
-                        <h4>Veneers</h4>
-                        <p>Transform your smile by correcting gaps, chips, and discoloration.</p>
-                        <h4>Extractions</h4>
-                        <p>Gentle tooth removal and replacement options for optimal oral health.</p>
-                        <h4>Dentures</h4>
-                        <p>Comfortable, natural-looking full and partial dentures.</p>
-                        <h4>Fillings & Bondings</h4>
-                        <p>Tooth-colored fillings and bonding for seamless, healthy smiles.</p>
+                        <p>Restore your smile's function and beauty with custom solutions.</p>
                     </div>
-                    <div class="services-images">
-                        <img src="images/office2-equipment.jpeg" alt="Dental Technology in Use" class="rounded shadow img-zoom">
-                        <img src="images/office4-treatment.jpeg" alt="Dental Treatment Room" class="rounded shadow img-zoom">
+                    <div>
+                        <h4>Veneers</h4>
+                        <p>Correct gaps, chips, and stains for a confident, beautiful smile.</p>
+                        <h4>Extractions</h4>
+                        <p>Gentle tooth removal and comfortable replacement options.</p>
+                        <h4>Dentures</h4>
+                        <p>Full and partial dentures for reliable, natural-looking results.</p>
+                        <h4>Fillings & Bondings</h4>
+                        <p>Tooth-colored materials for seamless, healthy restorations.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="drlee" class="section fade-in">
+        <section class="drlee-section section" id="drlee">
             <div class="container drlee-flex">
-                <div class="drlee-photo-box">
-                    <img src="images/dr-lee.jpeg" alt="Dr. Lee" class="profile-img shadow">
+                <div>
+                    <img src="images/dr-lee.jpeg" alt="Dr. Lee" class="drlee-img">
                 </div>
                 <div>
                     <h2>Meet Dr. Lee</h2>
-                    <h3>Dr. Si-Hyeon Lee, DMD</h3>
+                    <h3>Si-Hyeon Lee, DMD</h3>
                     <p>
-                        Dentistry is a unique blend of science and art, allowing us to customize care for each patient. I am dedicated to helping patients relieve pain, restore function, and smile confidently—always with a gentle approach.
+                        Dr. Lee delivers gentle, personalized dental care blending science and artistry. His focus: relieve pain, restore health, and help you smile with confidence—always with kindness and a gentle touch.
                     </p>
                     <p>
-                        I strive to make every visit as comfortable as possible, offering nitrous oxide and taking time to listen to every patient's concerns.
-                    </p>
-                    <p>
-                        <strong>Education:</strong><br>
+                        <strong>Education</strong>:<br>
                         DMD, Nova Southeastern University<br>
                         B.S., The Ohio State University<br>
                         M.S., State University of New York at Buffalo<br>
                         Member: ADA, Virginia Dental Association
                     </p>
                     <p>
-                        <strong>Personal:</strong> When not caring for patients, I enjoy time with my wife Kate and our two kids, David and Claire.
+                        <strong>Personal:</strong> Dr. Lee enjoys life in Winchester with his wife Kate and their two children, David and Claire.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section id="patients" class="section slide-up">
+        <section class="reviews-section section" id="reviews">
             <div class="container">
                 <h2>Happy Patients</h2>
                 <div class="reviews-grid">
-                    <div class="review-card shadow fade-in">
-                        <p class="review-text">"Shine Dental and their staff are awesome! Courteous, quick and very helpful! Definitely recommend!!"</p>
+                    <div class="review-card">
+                        <p>"Shine Dental and their staff are awesome! Courteous, quick and very helpful! Definitely recommend!!"</p>
                         <div class="review-author">– Jillian Kiendl</div>
                     </div>
-                    <div class="review-card shadow fade-in">
-                        <p class="review-text">"I've been going to this place for years now. The dentist is good with kids and adults. Good family place to go to for all dental related things."</p>
+                    <div class="review-card">
+                        <p>"I've been going to this place for years now. The dentist is good with kids and adults. Good family place to go to for all dental related things."</p>
                         <div class="review-author">– Shereen Raza</div>
                     </div>
-                    <div class="review-card shadow fade-in">
-                        <p class="review-text">"I went in on very short notice with a bad wisdom tooth. Dr. Lee was kind and professional and I was in and out in about an hour. He pulled the tooth like he was sipping a cup of coffee."</p>
+                    <div class="review-card">
+                        <p>"I went in on very short notice with a bad wisdom tooth. Dr. Lee was kind and professional and I was in and out in about an hour. He pulled the tooth like he was sipping a cup of coffee."</p>
                         <div class="review-author">– Cody Montgomery</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section fade-in">
-            <div class="container contact-flex">
+        <section class="contact-section section" id="contact">
+            <div class="container contact-grid">
                 <div>
                     <h2>Contact Us</h2>
                     <div class="contact-info">
@@ -191,7 +183,7 @@
                     <input type="tel" id="phone">
                     <label for="message">Message</label>
                     <textarea id="message" required></textarea>
-                    <button type="submit" class="animated-btn primary">Submit</button>
+                    <button type="submit" class="primary-btn">Submit</button>
                     <p id="formMsg"></p>
                 </form>
             </div>
@@ -200,7 +192,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2020 Shine Dental Kids and Family Dentistry. All Rights Reserved.</p>
+            <p>© 2025 Shine Dental Kids and Family Dentistry. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -215,7 +207,7 @@
                 <input type="email" id="popupEmail" required>
                 <label for="popupMessage">Message:</label>
                 <textarea id="popupMessage" required></textarea>
-                <button type="submit" class="animated-btn primary">Send</button>
+                <button type="submit" class="primary-btn">Send</button>
             </form>
             <p id="popupFormMsg"></p>
         </div>
