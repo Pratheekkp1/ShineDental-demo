@@ -551,3 +551,190 @@ footer {
 .fade-in.visible, .slide-up.visible { opacity: 1; transform: none; }
 .slide-up { transition-delay: 0.1s; }
 .fade-in { transition-delay: 0.2s; }
+
+
+
+
+/* ====== Mobile-first Responsive Layout for iPhone and small screens ====== */
+@media (max-width: 700px) {
+    html, body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 0 0.5rem;
+        max-width: 100vw;
+    }
+
+    .navbar {
+        flex-direction: row;
+        height: auto;
+        padding: 0.4rem 0;
+    }
+
+    .logo-img {
+        height: 38px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #fff;
+        width: 100vw;
+        box-shadow: 0 8px 32px rgba(0,188,212,0.09);
+        display: none;
+        padding: 1.2rem 0 1.2rem 0;
+        gap: 1.1rem;
+        z-index: 99;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+        margin-right: 0.4rem;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 1.1rem;
+        padding: 1.1rem 0.2rem;
+        border-radius: 1.2rem;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    .hero-img {
+        max-width: 98vw;
+        height: 110px;
+        border-radius: 1.1rem;
+    }
+
+    .about-imgs {
+        flex-direction: row;
+        gap: 0.7rem;
+        justify-content: center;
+    }
+    .about-img {
+        max-width: 48vw;
+        height: 70px;
+        margin-bottom: 0;
+        border-radius: 0.8rem;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        gap: 1.1rem;
+    }
+    .service-card {
+        max-width: 100%;
+        padding: 1rem 0.3rem 1rem 0.3rem;
+    }
+
+    /* Carousel styles for mobile */
+    .carousel {
+        margin-bottom: 1.2rem;
+        width: 100vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .carousel-track,
+    .carousel-slide {
+        min-width: 96vw;
+        max-width: 96vw;
+        height: 120px;
+    }
+    .carousel-slide {
+        margin: 0 0.2rem;
+        border-radius: 1rem;
+    }
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1.3rem;
+        margin: 0 0.2rem;
+    }
+
+    /* Service gallery images */
+    .services-gallery {
+        gap: 0.7rem;
+    }
+    .service-image-item {
+        width: 40vw;
+        min-width: 90px;
+        height: 60px;
+        border-radius: 0.6rem;
+    }
+    .service-image-label {
+        font-size: 0.87rem;
+        border-radius: 0 0 0.6rem 0.6rem;
+    }
+
+    .drlee-flex {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .drlee-img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .review-card {
+        padding: 1rem 0.5rem 0.9rem 0.5rem;
+    }
+
+    .contact-grid {
+        flex-direction: column;
+        gap: 1.1rem;
+    }
+    .contact-form {
+        padding: 1.1rem 0.5rem;
+        min-width: unset;
+        max-width: 100vw;
+    }
+
+    .section {
+        padding: 0.7rem 0 0.4rem 0;
+        border-radius: 0.8rem;
+        margin: 0 0 1.7rem 0;
+    }
+
+    .services-bg-image {
+        width: 100vw;
+        height: 130px;
+        left: 50%;
+        top: 62%;
+        border-radius: 0;
+    }
+
+    .floating-schedule-btn {
+        right: 8px;
+        bottom: 8px;
+        padding: 0.7rem 1.1rem;
+        font-size: 0.95rem;
+        border-radius: 999px;
+        z-index: 200;
+        box-shadow: 0 2px 8px rgba(0,188,212,0.19);
+    }
+
+    footer {
+        padding: 0.9rem 0 0.6rem 0;
+        font-size: 0.98rem;
+        border-radius: 0.8rem 0.8rem 0 0;
+        margin-top: 1.2rem;
+    }
+}
